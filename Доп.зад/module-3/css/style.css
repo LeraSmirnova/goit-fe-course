@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+	padding: 0;
+}
+body{
+	background-image: url(https://s3.amazonaws.com/gumroad/files/8462096060410/968048bad7a24ba9a41ee2107a46c2c4/original/soft_bright_blue_background-other.jpg);
+}
+.wrapper{
+	width: 500px;
+	margin: 0 auto;	
+	font-family: "Arial";
+	font-size: 14px;
+}
+h3, span, li{
+	display: block;
+	color: #2D3C5B;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+ul{
+	list-style: none;
+}
+
+li{
+	background: url(/img/next.png) no-repeat;
+	padding-left: 20px;
+}
+h2{
+	margin-top: 20px;
+}
+span{
+	font-weight: 600;
+}
+	
+
