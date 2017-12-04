@@ -20,16 +20,22 @@ h3, span, li{
 ul{
 	list-style: none;
 }
-
-li{
+/* 
+ li{
 	background: url(/img/next.png) no-repeat;
-	padding-left: 20px;
+	padding-left: 20px; }*/
+	
+
+li::before{
+	content: url(../img/next.png);
+
 }
+
 h2{
 	margin-top: 20px;
 }
 span{
 	font-weight: 600;
 }
-	
+
 
