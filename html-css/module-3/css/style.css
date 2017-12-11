@@ -1,0 +1,82 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-image: url(http://ramki-vsem.ru/fon/fon-nebo4.jpg);
+	background-repeat: no-repeat;
+}
+
+.wrapper{
+	width: 480px;
+	font-family: "Arial";
+	font-size: 12px;
+	line-height: 1.417;
+	color: #4C4F4F;
+	margin: 0 auto;
+	background: #fff;
+	padding: 60px 37px 44px 37px;
+}
+h2{
+	font-family: "Pathway Gothic One";
+	font-size: 25px;
+}
+h2, h3, ul>li {
+	color: #173255;
+}
+.img-plane{
+	height: 98px;
+	width: 406px;
+	margin-top: 33px;
+}
+h3 {
+	margin-top: 28px;
+}
+ p{
+	margin-top: 18px;
+		
+}
+.principles{
+	margin-top: 53px;
+}
+hr{
+	margin-bottom: 54px;
+	margin-top: 54px;
+}
+ol>li{
+	list-style-type: none;
+	width: 328px;
+}
+ul{
+	columns: 2;
+	list-style-type: none;
+	margin-top: 20px;
+	margin-left: 40px;
+	line-height: 2.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
