@@ -3,26 +3,24 @@
     margin: 0;
     padding: 0;
 }
-.clearfix::after {
-    content: "";
-    display: block;
-    clear: both;
-}
 body {
     background-image: url(../image/BG.png);
     background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 230px;
+    padding-bottom: 268px;
 }
 .wrapper {
     width: 1024px;
-    /* padding: 54px; */
     font-family: "Arial";
     font-size: 13px;
     line-height: 1.462;
     color: #4C4F4F;
     background-color: #fff;
     margin: 0 auto;
+    padding-bottom: 88px;
 }
-.inner-wrapper1{
+.inner-wrapper1 {
     margin-left: 54px;
     margin-right: 54px;
     padding-top: 116px;
@@ -48,6 +46,8 @@ body {
 }
 h3 {
     margin-bottom: 18px;
+    color: #173255;
+    font-size: 15px;
 }
 /*создание списка со счетчиком*/
 h2 {
@@ -57,12 +57,12 @@ h2 {
     margin-bottom: 48px;
 }
 .list-item {
-    list-style: none;    
+    list-style: none;
 }
 .list {
     counter-reset: list;
     position: relative;
-    width: 200px; 
+    width: 200px;
     margin-left: 30px;
 }
 .list-item::before {
@@ -73,7 +73,7 @@ h2 {
     padding: 10px 14px;
     border-radius: 50%;
     position: absolute;
-    left:-45px;
+    left: -45px;
 }
 .article {
     margin-top: 20px;
@@ -83,23 +83,16 @@ h2 {
     width: 900px;
     margin: 0 auto;
 }
-.inner-wrapper2{
+.inner-wrapper2 {
     margin-top: 58px;
     margin-left: 54px;
     margin-right: 54px;
 }
-
 .offer {
     display: inline-block;
     width: 638px;
     vertical-align: top;
     margin-right: 50px;
-}
-
-.guote {
-    float: right;
-    width: 30%;
-    position: relative;
 }
 ul {
     columns: 2;
@@ -109,27 +102,27 @@ ul {
     line-height: 2.5;
     position: relative
 }
-
 .unordered_list::before {
     content: url(../image/arrow.png);
     margin-left: -23px;
     position: absolute;
 }
-.quote{
+.quote {
     display: inline-block;
     width: 210px;
     vertical-align: top;
     position: relative
 }
-blockquote::before{
+blockquote::before {
     content: '\00201C';
 }
-blockquote::after{
+blockquote::after {
     content: '\00201D';
 }
-blockquote{
+blockquote {
     margin: 22px;
     font-size: 15px;
+    color: #173255;
 }
 .block {
     border: 1px solid #E1DDDD;
@@ -139,22 +132,30 @@ blockquote{
     width: 210px;
     height: 192px;
     background-color: #FDFAFA;
-   }
-   .block::before, .block::after {
-    content: ''; 
+}
+.block::before,
+.block::after {
+    content: '';
     position: absolute;
-    left: 100px; bottom: -20px;
+    left: 100px;
+    bottom: -35px;
     border: 10px solid transparent;
-    border-top: 10px solid #E1DDDD;
-   }
-   .block::after {
-    border-top: 10px solid #FDFAFA;
-    bottom: -19px; 
-   }
-   .autor{
-       position: absolute;
-       display: inline-block;
-    bottom: 0;
-    right: 0;
-   }
-   
+    border-top: 25px solid #E1DDDD;
+}
+.block::after {
+    border-top: 25px solid #FDFAFA;
+    bottom: -33px;
+}
+.autor {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    bottom: -300px;
+}
+span {
+    font-size: 16px;
+    color: #374865;
+}
+.autor p {
+    margin-top: 23px;
+}
