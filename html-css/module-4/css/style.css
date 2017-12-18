@@ -6,7 +6,7 @@
 body {
     background-image: url(../image/BG.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     padding-top: 230px;
     padding-bottom: 268px;
 }
@@ -21,10 +21,8 @@ body {
     padding-bottom: 88px;
 }
 .inner-wrapper1 {
-    margin-left: 54px;
-    margin-right: 54px;
     padding-top: 116px;
-    margin-bottom: 54px;
+    margin: 0 54px 54px 54px;
 }
 .profile {
     display: inline-block;
@@ -70,7 +68,7 @@ h2 {
     counter-increment: list;
     content: counter(list);
     background-color: #00B0E8;
-    padding: 10px 14px;
+    padding: 10px 16px;
     border-radius: 50%;
     position: absolute;
     left: -45px;
@@ -84,9 +82,7 @@ h2 {
     margin: 0 auto;
 }
 .inner-wrapper2 {
-    margin-top: 58px;
-    margin-left: 54px;
-    margin-right: 54px;
+   margin: 58px 54px 0px 54px;
 }
 .offer {
     display: inline-block;
