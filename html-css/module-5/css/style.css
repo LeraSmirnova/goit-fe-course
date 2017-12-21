@@ -46,6 +46,8 @@ body {
     background-color: #fff;
     padding: 10px;
     text-align: center;
+    margin-top: 10px;
+    left: 102px;
 }
 
 .submenu::before {
@@ -184,7 +186,7 @@ h2 {
 
 .destination {
     margin-top: 57px;
-    /* position: relative; */
+    position: relative;
     width: 288px;
     height: 270px;
     background-color: #000;
@@ -196,20 +198,20 @@ h2 {
     margin-right: 0px;
 }
 
-/* .destination_img {
+.destination_img {
     position: absolute;
-} */
+}
 
 .destinatoin_description {
     display: none;
-    /* position: absolute; */
+    position: absolute;
     width: 146px;
     background-color: #193149;
     font-family: "arial";
     padding: 15px 10px;
     height: 270px;
 }
-.destination_img:hover .destinatoin_description{
+.destination:hover .destinatoin_description{
 display: block;
 }
 span {
@@ -222,20 +224,29 @@ span {
 }
 
 p {
+    position: absolute;
     font-size: 10px;
     font-family: "Arial";
-    line-height: 1.4;
+    line-height: 1.6;
     color: #CBC6C6;
-    margin-top: 20px;
+    margin-top: 20px; 
 }
 
-button {
+a {
+    position: absolute;
+    display: block;
+    text-decoration: none;
+    width: 60px;
+    height: 20px;
     border-radius: 4px;
     font-family: "Arial";
+    background-color: #FAF6FB;
     font-size: 12px;
     color: #000;
     bottom: 19px;
     right: 12px;
+    line-height: 20px;
+    text-align: center;
 }
 .to_top{ 
     position: fixed;
