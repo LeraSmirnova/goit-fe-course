@@ -210,14 +210,17 @@ h2 {
     font-family: "arial";
     padding: 15px 10px;
     height: 270px;
+    text-align: center;
 }
-.destination:hover .destinatoin_description{
-display: block;
+
+.destination:hover .destinatoin_description {
+    display: block;
 }
+
 span {
     font-family: "Open Sans";
     color: #E0E4E7;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.2;
     text-transform: uppercase;
     text-align: center;
@@ -229,7 +232,7 @@ p {
     font-family: "Arial";
     line-height: 1.6;
     color: #CBC6C6;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 a {
@@ -248,7 +251,8 @@ a {
     line-height: 20px;
     text-align: center;
 }
-.to_top{ 
+
+.to_top {
     position: fixed;
     width: 30px;
     height: 30px;
@@ -257,12 +261,14 @@ a {
     right: 100px;
     bottom: 100px;
 }
-.to_top img{
+
+.to_top img {
     position: absolute;
     top: 6px;
     left: 7px;
 }
-footer{
+
+footer {
     background-color: #30455B;
     height: 130px;
     margin-top: 416px;
