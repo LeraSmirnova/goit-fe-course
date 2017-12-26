@@ -46,7 +46,7 @@ body {
     background-color: #fff;
     padding: 10px;
     text-align: center;
-    margin-top: 10px;
+    padding-top: 10px;
     left: 102px;
 }
 
@@ -105,21 +105,6 @@ body {
 .slider-img1 {
     position: absolute;
     z-index: 5;
-}
-
-.slider-img2 {
-    position: absolute;
-    z-index: 4;
-}
-
-.slider-img3 {
-    position: absolute;
-    z-index: 3;
-}
-
-.slider-img4 {
-    position: absolute;
-    z-index: 2;
 }
 
 .title_1 {
@@ -226,7 +211,7 @@ span {
     text-align: center;
 }
 
-p {
+.destinatoin_description p {
     position: absolute;
     font-size: 10px;
     font-family: "Arial";
@@ -235,7 +220,7 @@ p {
     margin-top: 20px;
 }
 
-a {
+.destinatoin_description a {
     position: absolute;
     display: block;
     text-decoration: none;
