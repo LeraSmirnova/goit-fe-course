@@ -30,6 +30,10 @@ body {
     display: inline-block;
     font-size: 28px;
     margin-right: 58px;
+}
+
+.menu-item a{
+    text-decoration: none;
     color: #fff;
 }
 
@@ -49,6 +53,9 @@ body {
     padding-top: 10px;
     left: 102px;
 }
+.submenu a {
+    color: #263555;
+}
 
 .submenu::before {
     content: '';
@@ -58,7 +65,7 @@ body {
     top: -8px;
 }
 
-.menu-item:hover {
+.menu-item:hover a {
     color: #263555;
 }
 
