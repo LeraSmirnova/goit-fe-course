@@ -136,12 +136,11 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 33px;
-    height: 33px;
+    width: 2rem;
+    height: 2rem;
     transform: translate(-50%, -50%);
     background: url(../img/zoom.png) center no-repeat;
-    -webkit-background-size: 33px 33px;
-    background-size: 33px 33px;
+    background-size: 2rem 2rem;
     opacity: 0;
     transition: opacity 0.4s;
     z-index: 3;
