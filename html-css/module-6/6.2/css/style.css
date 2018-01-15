@@ -43,7 +43,6 @@ body {
     background-color: #fff;
     padding: 0.625rem;
     text-align: center;
-    padding-top: 0.625rem;
     left: 8.2rem;
 }
 
@@ -82,7 +81,7 @@ body {
 .menu-item:hover>.submenu {
     display: block;
     color: #6B7488;
-    margin-top: 0.25rem;
+    margin-top: 0.1rem;
 }
 
 .gallery {
@@ -116,6 +115,8 @@ body {
 .gallery_photo img {
     position: relative;
     z-index: 1;
+    width: 17.5rem;
+    height: 10.06rem;
 }
 
 .gallery_photo::before {
@@ -202,15 +203,15 @@ body {
 
 .footer-menu-contact h3 {
     text-transform: uppercase;
-    font-family: "OpenSans";
+    font-family: "Open Sans";
 }
 
 .footer-menu-contact a {
     text-decoration: none;
-    font-family: "Open Sans";
+    font-family: "Arial";
     line-height: 0.875;
     color: #E3E6E9;
-    font-size: 1rem;
+    font-size: 0.75rem;
 }
 
 .footer-socials {
@@ -242,3 +243,4 @@ body {
 .linkedin {
     background: url('../img/icon/footer-icons.png') -62px -62px;
 }
+  
