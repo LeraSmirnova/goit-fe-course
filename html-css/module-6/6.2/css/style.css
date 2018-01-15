@@ -112,7 +112,9 @@ body {
     cursor: pointer;
 }
 
+
 .gallery_photo img {
+    display: block;
     position: relative;
     z-index: 1;
     width: 17.5rem;
