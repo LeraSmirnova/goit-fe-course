@@ -17,11 +17,10 @@ body {
     font-family: "Pathway Gothic One";
     font-size: 1.75rem;
     margin-top: 2.875rem;
-    margin-bottom: 3.6rem;
+    margin-bottom: 4.6rem;
 }
 
 .menu {
-    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -30,24 +29,6 @@ body {
 .menu-item a {
     text-decoration: none;
     color: #fff;
-}
-
-.submenu {
-    display: none;
-    list-style: none;
-    position: absolute;
-    color: #8990A0;
-    font-size: 1.25rem;
-    line-height: 1.2;
-    height: 5rem;
-    width: 4rem;
-    border: 0.0625rem solid #fff;
-    border-radius: 0.2rem;
-    background-color: #fff;
-    padding: 0.625rem;
-    text-align: center;
-    left: 8.2rem;
-    padding-top: 1rem;
 }
 
 .logo {
@@ -69,31 +50,50 @@ body {
 .submenu a {
     color: #263555;
 }
+.menu-item{
+    position: relative;
+}
+.submenu-box {
+    display: none;
+    position: absolute;
+    padding-top: 1rem;
+    left: -1rem;
+}
 
-.submenu-box>ul:before {
+.submenu-box>ul {
+    position: relative;
+    background-color: #fff;
+}
+
+.submenu-box>ul::before {
     content: '';
     position: absolute;
+    display: block;
     border: 3px solid transparent;
     border-bottom: 4px solid #fff;
-    top: -8px;
+    top: -0.5rem;
+    left: 2.5rem;
+}
+
+.submenu {
+    height: 5rem;
+    width: 4rem;
+    border: 0.0625rem solid #fff;
+    border-radius: 0.2rem;
+    background-color: #fff;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    padding: 0.625rem;
+    text-align: center;
 }
 
 .menu-item:hover a {
     color: #263555;
 }
 
-.submenu-box:hover>.submenu {
+.menu>li:hover .submenu-box {
     display: block;
-    color: #6B7488;
-    margin-top: 0.1rem;
 }
-
-.menu>li:hover .submenu {
-    display: block;
-    color: #6B7488;
-    margin-top: 0.1rem;
-}
-
 
 /* HEADER */
 
@@ -207,6 +207,8 @@ span {
 
 
 /* CONTACTS */
+
+
 /* FOOTER */
 
 .footer-menu {
@@ -284,4 +286,6 @@ span {
 .linkedin {
     background: url('../img/icon/footer-icons.png') -62px -62px;
 }
+
+
 /* FOOTER */
