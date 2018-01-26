@@ -247,6 +247,7 @@ span {
 .footer-menu-contact h3 {
     text-transform: uppercase;
     font-family: "Open Sans";
+    font-size: 1.125rem;
 }
 
 .footer-menu-contact a {
@@ -287,5 +288,5 @@ span {
     background: url('../img/icon/footer-icons.png') -62px -62px;
 }
 
-
 /* FOOTER */
+  
