@@ -264,7 +264,7 @@ body {
 
 .footer-menu-info a {
     text-decoration: none;
-    font-family: "Open Sans";
+    font-family: 'Open Sans';
     text-transform: uppercase;
     line-height: 0.875;
     color: #E3E6E9;
@@ -291,7 +291,7 @@ body {
 
 .footer-menu-contact h3 {
     text-transform: uppercase;
-    font-family: "Open Sans";
+    font-family: 'Open Sans', arial;
     font-size: 1.125rem;
 }
 
@@ -335,3 +335,4 @@ body {
 
 
 /* FOOTER */
+    
