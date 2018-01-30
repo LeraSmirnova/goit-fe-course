@@ -360,14 +360,13 @@ body {
     margin-left: 1.8rem;
 }
 
-
 @media only screen and (min-device-width: 768px) {
     .footer-menu {
         display: flex;
         padding: 2.5rem 7rem 3rem 12rem;
         flex-direction: row;
     }
-    .footer-menu-info{
+    .footer-menu-info {
         flex-basis: 70%;
     }
     .footer-menu-info a {
@@ -377,25 +376,23 @@ body {
         font-size: 1rem;
         padding-bottom: 0.5rem;
     }
-    .footer-menu-contact a{
+    .footer-menu-contact a {
         font-size: 0.75rem;
         line-height: 0.875;
     }
-    .footer-menu-contact{
+    .footer-menu-contact {
         flex-basis: 30%;
         flex-direction: column;
     }
     .phone::before {
         content: "";
-    
     }
     .email::before {
         content: "";
     }
-    .footer-menu-contact ul{
+    .footer-menu-contact ul {
         flex-direction: column;
     }
-  
 }
 
 .footer-socials {
