@@ -93,7 +93,8 @@ body {
     display: none;
     position: absolute;
     padding-top: 0.5rem;
-    left: -1rem;
+    left: 50%;
+    margin-left: -2rem;
 }
 
 .submenu-box>ul {
@@ -107,21 +108,19 @@ body {
     display: block;
     border: 3px solid transparent;
     border-bottom: 4px solid #fff;
-    top: -0.5rem;
+    top: -0.4rem;
     left: 1.8rem;
 }
 
 .submenu {
     height: 3.5rem;
     width: 2.875rem;
-    border: 1px solid #fff;
     border-radius: 0.2rem;
     background-color: #fff;
     font-size: 0.875rem;
     line-height: 1.4;
     padding: 0.4rem;
     text-align: center;
-    left: 6.6rem;
 }
 
 .menu-item:hover a {
@@ -149,9 +148,15 @@ body {
         left: 2.8rem;
         z-index: 1;
     }
+    .submenu-box {
+        margin-left: -5rem;
+    }
 }
 
 @media only screen and (min-width: 1025px) {
+    .submenu-box {
+        margin-left: -4rem;
+    }
     .menu-item {
         margin-bottom: 0;
     }
@@ -203,17 +208,19 @@ body {
 
 /* GALLERY */
 
+.photo_tour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .gallery_photo {
-    /* min-width: 18rem;
-    max-width: 25.375rem;
-    width: 100%; */
     margin-bottom: 2.5rem;
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    
-
 }
+
 .gallery>h2 {
     text-transform: uppercase;
     font-family: "Pathway Gothic One";
@@ -272,12 +279,6 @@ body {
     background-image: url(../img/img_480/img-6.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-
-
-.gallery_photo:last-child {
-    margin-bottom: 0;
 }
 
 .gallery_photo::before {
