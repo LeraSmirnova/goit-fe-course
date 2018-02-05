@@ -193,6 +193,7 @@ body {
         display: flex;
         flex-basis: auto;
         order: 0;
+        margin-left: 3rem;
     }
     .submenu::before {
         content: '';
@@ -309,8 +310,8 @@ body {
     z-index: 3;
 }
 
-.gallery_photo:hover:after,
-.gallery_photo:hover:before {
+.gallery_photo:hover::after,
+.gallery_photo:hover::before {
     opacity: 1;
 }
 
