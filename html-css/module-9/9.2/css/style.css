@@ -437,27 +437,24 @@ span {
     padding-top: 1.5rem;
     margin-bottom: 3.75rem;
 }
-.footer-icon {
-    display: block;
+
+/* SVG */
+
+.svg-socials{
+    display: flex;
+}
+
+.icon{
     width: 2rem;
-    height: 2rem;
-    margin-right: 0.75rem;
-}
-.twitter {
-    background: url('../img/icon/footer-icons.png') -10px -10px;
+    height: 2rem; 
+    fill: #F5B35F;
 }
 
-.facebook {
-    background: url('../img/icon/footer-icons.png') -62px -10px;
+.icon:hover{
+    fill: #23589B;
 }
 
-.google {
-    background: url('../img/icon/footer-icons.png') -10px -62px;
-}
-
-.linkedin {
-    background: url('../img/icon/footer-icons.png') -62px -62px;
-}
+/* SVG */
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
     .footer-menu-contact{
@@ -490,4 +487,3 @@ span {
 
 
 /* FOOTER */
-
