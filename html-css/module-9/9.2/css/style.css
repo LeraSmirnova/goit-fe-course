@@ -45,6 +45,7 @@ body {
     text-transform: uppercase;
     line-height: 4.8rem;
     margin: 0 auto;
+    margin-bottom: 1rem;
 }
 
 .submenu a {
@@ -272,10 +273,11 @@ blockquote::after {
 .block::after {
     content: '';
     position: absolute;
-    left: 120px;
     bottom: -45px;
     border: 20px solid transparent;
     border-top: 25px solid #E1DDDD;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .block::after {
@@ -294,7 +296,9 @@ blockquote::after {
     position: absolute;
     display: inline-block;
     text-align: center;
-    bottom: -7.5rem;
+    bottom: -8.5rem;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 span {
@@ -327,7 +331,7 @@ span {
         background-image: url(../img/plane768.jpg);
         height: 17.4rem;
         background-repeat: no-repeat;
-        padding-right: 1rem;
+        margin-right: 1rem;
     }
     .main h2 {
         font-size: 1.75rem;
@@ -345,19 +349,17 @@ span {
         height: 14rem;
     }
     .autor {
-        bottom: -9rem;
-    }
-    .block::before,
-    .block::after {
-        left: 50px;
+        bottom: -12rem;
     }
 }
 
-@media only screen and (min-width: 992px) {
+
+@media only screen and (min-width: 992px)  {
     .img {
         background-image: url(../img/plane768.jpg);
         height: 17.4rem;
         background-repeat: no-repeat;
+        margin-right: 1rem;
     }
     .main h2 {
         font-size: 2rem;
@@ -365,13 +367,7 @@ span {
     .block {
         height: 10rem;
     }
-    .block::before,
-    .block::after {
-        left: 98px;
-    }
-
-
-}
+} 
 
 /* MAIN */ 
 
@@ -403,7 +399,6 @@ span {
 }
 .footer-menu-contact{
     display: flex;
-    /* text-align: center; */
     justify-content: center;
 }
 .footer-list-item a{
