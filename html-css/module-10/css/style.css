@@ -1,3 +1,5 @@
+/* Вставьте ваш CSS сюда вместо этого примера */
+
 /* RESET */
 
 ul,
@@ -20,6 +22,7 @@ body {
 }
 
 .container {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding-top: 3.6rem;
     min-width: 30rem;
@@ -112,6 +115,8 @@ body {
     border-bottom: 4px solid #fff;
     top: -0.4rem;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
 }
 
@@ -193,48 +198,6 @@ body {
     font-size: 1.75rem;
 }
 
-.resp_img1 {
-    height: 13.5rem;
-    background-image: url(../img/img_480/img-1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.resp_img2 {
-    height: 13.5rem;
-    background-image: url(../img/img_480/img-2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.resp_img3 {
-    height: 13.5rem;
-    background-image: url(../img/img_480/img-3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.resp_img4 {
-    height: 13.5rem;
-    background-image: url(../img/img_480/img-4.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.resp_img5 {
-    height: 13.5rem;
-    background-image: url(../img/img_480/img-5.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.resp_img6 {
-    height: 13.5rem;
-    background-image: url(../img/img_480/img-6.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .gallery__item {
     position: relative;
 }
@@ -246,20 +209,26 @@ body {
     top: 50%;
     width: 2rem;
     height: 2rem;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     background: url(../img/zoom.png) center no-repeat;
     background-size: 2rem 2rem;
     opacity: 0;
+    -webkit-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
     transition: opacity 0.4s;
     z-index: 3;
 }
 
 .gallery__photo:hover::after {
     opacity: 1;
+    -webkit-filter: none;
     filter: none;
 }
 
 .gallery__photo:hover {
+    -webkit-filter: brightness(0.6);
     filter: brightness(0.6);
 }
 
@@ -280,270 +249,28 @@ body {
     left: 0.4375rem;
 }
 
+@media only screen and (max-width: 768px) {
+    .gallery__item:nth-last-child(-n+3) {
+        display: none;
+    }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-    .resp_img1 {
-        height: 11rem;
-        background-image: url(../img/img_768/img-1.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
+    .gallery__item:last-child {
+        display: none;
     }
-    .resp_img2 {
-        height: 11rem;
-        background-image: url(../img/img_768/img-2.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .resp_img3 {
-        height: 11rem;
-        background-image: url(../img/img_768/img-3.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .resp_img4 {
-        height: 11rem;
-        background-image: url(../img/img_768/img-4.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .resp_img5 {
-        height: 11rem;
-        background-image: url(../img/img_768/img-5.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .resp_img6 {
-        height: 11rem;
-        background-image: url(../img/img_768/img-6.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .resp_img7 {
-        height: 11rem;
-        background-image: url(../img/img_768/img-7.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .resp_img8 {
-        height: 11rem;
-        background-image: url(../img/img_768/img-8.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
+    .respimg {
+        height: 10rem;
     }
 }
 
-@media only screen and (min-width: 992px) {
-    .resp_img1 {
-        height: 9.5rem;
-        background-image: url(../img/img_1024/img-1.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .resp_img2 {
-        height: 9.5rem;
-        background-image: url(../img/img_1024/img-2.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .resp_img3 {
-        height: 9.5rem;
-        background-image: url(../img/img_1024/img-3.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .resp_img4 {
-        height: 9.5rem;
-        background-image: url(../img/img_1024/img-4.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .resp_img5 {
-        height: 9.5rem;
-        background-image: url(../img/img_1024/img-5.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .resp_img6 {
-        height: 9.5rem;
-        background-image: url(../img/img_1024/img-6.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .resp_img7 {
-        height: 9.5rem;
-        background-image: url(../img/img_1024/img-7.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .resp_img8 {
-        height: 9.5rem;
-        background-image: url(../img/img_1024/img-8.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .resp_img9 {
-        height: 9.5rem;
-        background-image: url(../img/img_1024/img-9.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .respimg {
+        height: 9rem;
     }
 }
-
-/* retina */
-
-@media only screen and (min-width: 320px) and (max-width:767px) and (-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi) {
-    .resp_img1 {
-        height: 13.5rem;
-        background-image: url(../img/img_retina_480/img-1@2x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .resp_img2 {
-        height: 13.5rem;
-        background-image: url(../img/img_retina_480/img-2@2x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .resp_img3 {
-        height: 13.5rem;
-        background-image: url(../img/img_retina_480/img-3@2x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .resp_img4 {
-        height: 13.5rem;
-        background-image: url(../img/img_retina_480/img-4@2x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .resp_img5 {
-        height: 13.5rem;
-        background-image: url(../img/img_retina_480/img-5@2x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .resp_img6 {
-        height: 13.5rem;
-        background-image: url(../img/img_retina_480/img-6@2x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 992px) and (-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi) {
-    .resp_img1 {
-        height: 11rem;
-        background-image: url(../img/img_retina_768/img-1@2x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .resp_img2 {
-        height: 11rem;
-        background-image: url(../img/img_retina_768/img-2@2x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .resp_img3 {
-        height: 11rem;
-        background-image: url(../img/img_retina_768/img-3@2x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .resp_img4 {
-        height: 11rem;
-        background-image: url(../img/img_retina_768/img-4@2x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .resp_img5 {
-        height: 11rem;
-        background-image: url(../img/img_retina_768/img-5@2x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .resp_img6 {
-        height: 11rem;
-        background-image: url(../img/img_retina_768/img-6@2x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .resp_img7 {
-        height: 11rem;
-        background-image: url(../img/img_retina_768/img-7@2x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .resp_img8 {
-        height: 11rem;
-        background-image: url(../img/img_retina_768/img-8@2x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-}
-
-@media only screen and (min-width: 992px) and (-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi) {
-    .resp_img1 {
-        height: 9.5rem;
-        background-image: url(../img/img_retina_1024/img-1@2x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .resp_img2 {
-        height: 9.5rem;
-        background-image: url(../img/img_retina_1024/img-2@2x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .resp_img3 {
-        height: 9.5rem;
-        background-image: url(../img/img_retina_1024/img-3@2x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .resp_img4 {
-        height: 9.5rem;
-        background-image: url(../img/img_retina_1024/img-4@2x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .resp_img5 {
-        height: 9.5rem;
-        background-image: url(../img/img_retina_1024/img-5@2x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .resp_img6 {
-        height: 9.5rem;
-        background-image: url(../img/img_retina_1024/img-6@2x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .resp_img7 {
-        height: 9.5rem;
-        background-image: url(../img/img_retina_1024/img-7@2x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .resp_img8 {
-        height: 9.5rem;
-        background-image: url(../img/img_retina_1024/img-8@2x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .resp_img9 {
-        height: 9.5rem;
-        background-image: url(../img/img_retina_1024/img-9@2x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-}
-
-/* retina */
 
 /* GALLERY */
-
 
 /*  FOOTER */
 
@@ -555,6 +282,12 @@ body {
 
 .footer__menu-list>.footer__menu-link {
     text-decoration: none;
+}
+
+.footer__menu-link:hover,
+.footer__link-email:hover,
+.footer__link-phone:hover {
+    color: #FFB300;
 }
 
 .footer__menu-items {
@@ -572,14 +305,20 @@ body {
 .footer__menu-list {
     list-style: none;
     -webkit-padding-start: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .footer__menu-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .footer__list-contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -598,13 +337,13 @@ body {
 }
 
 .footer__link-phone::before {
-    content: url(../img/icon-svg/phone.svg);
+    content: url(../img/phone1.png);
     margin-right: 0.5rem;
     margin-left: 0.8rem;
 }
 
 .footer__link-email::before {
-    content: url(../img/icon-svg/email.svg);
+    content: url(../img/email.png);
     margin-right: 0.5rem;
     margin-left: 1.8rem;
 }
@@ -617,16 +356,17 @@ body {
 /* SVG */
 
 .svg-socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
-.footer__icon {
-    width: 2rem;
-    height: 2rem;
+.footer__svgstyle {
     fill: #F5B35F;
+    cursor: pointer;
 }
 
-.footer__icon :hover {
+.footer__svgstyle:hover {
     fill: #23589B;
 }
 
@@ -634,9 +374,15 @@ body {
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
     .footer__menu-contact {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
     .footer__list-contacts {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
     .footer__link-phone::before {
@@ -649,9 +395,15 @@ body {
 
 @media only screen and (min-width: 992px) {
     .footer__menu-contact {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
     .footer__list-contacts {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
     .footer__link-phone::before {
